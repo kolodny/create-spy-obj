@@ -19,11 +19,11 @@ interface MyInterface {
 }
 
 // Use it with a class
-const myServiceSpyObj = createSpyObj<MyService>()
+const myServiceSpyObj = createSpyObj<MyService>();
 myServiceSpyObj.myMethod.and.returnValue('bar');
 
 // Use it with an interface
-const myInterfaceSpyObj = createSpyObj<MyInterface>()
+const myInterfaceSpyObj = createSpyObj<MyInterface>();
 myInterfaceSpyObj.getName.and.returnValue('cool');
 ```
 

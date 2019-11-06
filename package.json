@@ -1,12 +1,13 @@
 {
   "name": "create-spy-obj",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Create jasmine spy objects magically",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
     "test": "npm run build && jasmine --require=ts-node/register --config=spec/jasmine.json"
   },
+  "files": ["index.js", "index.d.ts", "index.ts"],
   "keywords": [],
   "author": "Moshe Kolodny",
   "license": "MIT",

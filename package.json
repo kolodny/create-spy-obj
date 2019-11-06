@@ -1,0 +1,31 @@
+{
+  "name": "create-spy-obj",
+  "version": "0.0.0",
+  "description": "Create jasmine spy objects magically",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && jasmine --require=ts-node/register --config=spec/jasmine.json"
+  },
+  "keywords": [],
+  "author": "Moshe Kolodny",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jasmine": "^3.4.6",
+    "jasmine": "^3.5.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.7.2"
+  },
+  "peerDependencies": {
+    "jasmine": ">2.0.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kolodny/create-spy-obj.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kolodny/create-spy-obj/issues"
+  },
+  "homepage": "https://github.com/kolodny/create-spy-obj#readme"
+}

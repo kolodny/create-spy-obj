@@ -25,6 +25,11 @@ myServiceSpyObj.myMethod.and.returnValue('bar');
 // Use it with an interface
 const myInterfaceSpyObj = createSpyObj<MyInterface>();
 myInterfaceSpyObj.getName.and.returnValue('cool');
+
+// Use it with a class without generics (can't do the same with interfaces)
+const myServiceSpyObj = createSpyObj(MyService);
+myServiceSpyObj.myMethod.and.returnValue('bar');
+
 ```
 
 ### How it works

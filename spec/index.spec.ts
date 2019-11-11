@@ -42,6 +42,25 @@ describe('createSpyObj', () => {
     });
   });
 
+  describe('works with passing the class to the function', () => {
+    abstract class MyService {
+      abstract method(): string;
+      abstract propMethod: () => number;
+    }
+
+    it('works on methods', () => {
+      const spyObj = createSpyObj(MyService);
+      spyObj.method.and.returnValue('bar');
+      expect(spyObj.method()).toBe('bar');
+    });
+
+    it('works on property methods', () => {
+      const spyObj = createSpyObj(MyService);
+      spyObj.propMethod.and.returnValue(456);
+      expect(spyObj.propMethod()).toBe(456);
+    });
+  });
+
   describe('works on interfaces', () => {
     interface MyService {
       method(): string;

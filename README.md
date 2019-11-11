@@ -3,6 +3,10 @@ create-spy-obj
 
 Create jasmine spy objects magically
 
+[![NPM version][npm-image]][npm-url]
+[![Build status][travis-image]][travis-url]
+[![Downloads][downloads-image]][downloads-url]
+
 ## Usage
 
 ```ts
@@ -35,10 +39,6 @@ myServiceSpyObj.myMethod.and.returnValue('bar');
 ### How it works
 
 ✨ Proxy magic ✨
-
-[![NPM version][npm-image]][npm-url]
-[![Build status][travis-image]][travis-url]
-[![Downloads][downloads-image]][downloads-url]
 
 [npm-image]: https://img.shields.io/npm/v/create-spy-obj.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/create-spy-obj
